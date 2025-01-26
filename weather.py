@@ -405,7 +405,7 @@ def next_pg():
         global my_label
         
         try:
-                api_request=requests.get("http://api.weatherapi.com/v1/current.json?key=b94831ff17fd4d84afa51711232204&q="+x.get())
+                api_request=requests.get("http://api.weatherapi.com/v1/current.json?key=" "Give your own API key from weather api website "="+x.get())
                 api=json.loads(api_request.content)
                 b=str(api["current"]["condition"]["text"])
                 if(api["current"]["is_day"]==1):
